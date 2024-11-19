@@ -1,30 +1,60 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+
+typedef struct {
+    int dificuldade;
+    int valor1;
+    int valor2;
+    int operacao;
+    int resultado;
+} Calcular;
 
 
-verificacao(){
-   if(resposta = true){
-        
-   }
-}
-int main() {
-    int numero;
+void jogar(Calcular *calc){
+    switch (calc->dificuldade){ // esse switch recebe uma variavel para determinar a dificuldade do jogo
     
-    while (1) {  
-        printf("Digite um número (0 para parar): ");
-        scanf("%d", &numero);
-        
-        if (numero == 0) {
-            break; 
-        }
-        
-        printf("Você digitou: %d\n", numero);
-        jogar();
+    case 1: // facil: entre 0 e 10
+
+        // chama uma função rand pros numeros e para as operações, cria um if pra chamar as operações, verificar a resposta e atribuir as devidas pontuações
+
+        break;
+    case 2: // medio: entre 0 e 100
+
+        // chama uma função rand pros numeros e para as operações, cria um if pra chamar as operações, verificar a resposta e atribuir as devidas pontuações
+
+        break;
+    case 3: // dificil: entre 0 e 1000
+
+        // chama uma função rand pros numeros e para as operações, cria um if pra chamar as operações, verificar a resposta e atribuir as devidas pontuações
+
+        break;
+    case 4: // insano: entre 0 e 10000
+
+        // chama uma função rand pros numeros e para as operações, cria um if pra chamar as operações, verificar a resposta e atribuir as devidas pontuações 
+
+        break;
+
+    default: // mostra mensagem de erro
+
+        break;
     }
-    
-    printf("Programa encerrado.\n");
-    pontuacao();
-    
-    return 0;
+}
+
+
+int main(){
+    Calcular calcular;
+    do{
+        jogar(&calcular);
+        if resposta != resptrue{ //pseudo código
+            vc errou
+
+        }
+        else{
+            acertou
+        }
+
+        pressione 1 para terminar o jogo
+
+        
+    }while(cont!=1)
+
 }
