@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(void){
+ 
+    
+}
+
+void incrementarPontos (int pontos, int resposta) {
+    if (resposta = 1/*True*/) {
+        pontos++;
+    }
+}
+
+int maxPontos (pontos, op) {
+    if (op = 1/*True*/)
+    {
+        return pontos;
+    }
+    
+}
